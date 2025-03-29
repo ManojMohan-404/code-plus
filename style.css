@@ -1,0 +1,151 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* Global Styles */
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to right, rgba(64, 142, 198, 0.8), rgba(30, 39, 97, 0.8)), 
+    url('/media_files/p.png'); /* Replace with your actual image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* Subtle Background Animation */
+    animation: moveBackground 30s linear infinite alternate;
+    color: #fff;
+    line-height: 1.6;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keyframes for Slow Background Movement */
+@keyframes moveBackground {
+    0% {
+        background-position: center;
+    }
+    50% {
+        background-position: 51% 49%;
+    }
+    100% {
+        background-position: 50% 50%;
+    }
+}
+
+
+/* General Reset */
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Logo Style - Circular Logo */
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    width: 45px; /* Adjust the size of the circular logo */
+    height: 45px; /* Adjust the size of the circular logo */
+    border-radius: 50%; /* This makes the logo circular */
+    object-fit: cover; /* Ensures the image is fully contained within the circle */
+    border: 3px solid #fff; /* Optional: Add a white border around the logo */
+}
+
+/* Navigation Bar */
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    transition: background 0.3s ease-in-out;
+}
+
+
+.nav-links a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+    margin-left: 130px;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+
+
+.main_title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px; /* Increased size for better visibility */
+    font-family: 'Lobster', cursive;
+    color: white; /* Make the text white */
+    text-align: center;
+    font-weight: bold; /* Make text bold */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adding shadow for contrast */
+    padding: 10px;
+    background-color: rgba(203, 192, 192, 0.5); /* Adding a semi-transparent background */
+    border-radius: 10px; /* Rounded corners for the background */
+    width: 80%; /* Adjust width to ensure it looks good on different screens */
+    box-sizing: border-box;
+}
+
+
+.fooret_bar {
+    background-color: coral;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50%;
+}
+
+.fooret_bar a {
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.fooret_bar a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+footer {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links a {
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    .main_title {
+        font-size: 30px;
+        width: 90%;
+    }
+
+    
+    .logo {
+        width: 50px;
+        height: 50px; /* Adjust logo size for mobile */
+    } 
+
+}
