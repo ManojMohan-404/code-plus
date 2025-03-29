@@ -6,7 +6,7 @@ body {
     background: linear-gradient(to right, #408EC6, #1E2761);
     background-size: cover;
     color: #fff;
-    background: url('/media_files/about.png') no-repeat center center;
+    background: url('media_files/about.png') no-repeat center center;
     background-size: cover;
     line-height: 1.6;
     font-optical-sizing: auto;
